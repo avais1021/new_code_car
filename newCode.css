@@ -15,19 +15,16 @@
 }
 
 /* header css  */
-.header .logo{
+.header .logo {
     margin-top: 25px;
 }
 
+/* first section  */
 .first_section {
     width: 100%;
     min-height: 769px;
     position: relative;
-    /* background: pink; */
 }
-
-
-
 
 .city {
     width: 100%;
@@ -70,12 +67,15 @@
     font-weight: bold;
     margin-top: 77px;
 }
-.first_section .left{
+
+.first_section .left {
     position: relative;
     min-height: 769px;
 }
+
 .first_section .car {
-    width: 596px;
+    max-width: 596px;
+    width: 100%;
     height: 223px;
     position: absolute;
     left: 0;
@@ -83,7 +83,8 @@
 }
 
 .first_section .right {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     height: 611px;
     background-color: #fff;
     box-shadow: 0px 9px 40px #00000031;
@@ -94,18 +95,24 @@
     align-items: center;
     padding-bottom: 46px;
 }
-.wrapper_left_right{
+
+.wrapper_left_right {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
-
+.wrapper_left_right form {
+    width: 100%;
+}
 .child {
-    width: 359px;
+    max-width: 359px;
+    width: 100%;
 }
 
 .c1 {
-    width: 366px;
+    max-width: 366px;
+    width: 100%;
     height: 60px;
     margin-top: 16px;
     text-align: center;
@@ -115,10 +122,10 @@
     font-size: 24px;
     font-weight: bold;
     color: #F17B3B;
+    word-break: break-word;
 }
 
 .c2 {
-
     height: 73px;
     display: flex;
     flex-direction: column;
@@ -130,10 +137,8 @@
 }
 
 .po {
-
     width: 70px;
     height: 11px;
-
 }
 
 #policy {
@@ -143,7 +148,8 @@
 }
 
 select {
-    width: 359px;
+    max-width: 359px;
+    width: 100%;
     height: 52px;
     font-size: 17.5px;
     color: #81A7A7;
@@ -158,7 +164,6 @@ select>option {
 }
 
 .c3 {
-
     height: 73px;
     display: flex;
     flex-direction: column;
@@ -180,7 +185,8 @@ label:hover {
 }
 
 input {
-    width: 359px;
+    max-width: 359px;
+    width: 100%;
     height: 52px;
     border: 1px solid #81A7A7;
     font-size: 17px;
